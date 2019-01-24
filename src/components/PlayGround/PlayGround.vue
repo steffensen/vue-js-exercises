@@ -1,13 +1,41 @@
 <template>
   <div class="hello">
-    <button @click="handleClick">Click</button>
-    <!-- <div v-bind:class="ClassName">What is going on here</div> -->
-    <div>What is going on here</div>
+
+    <!-- v-bind -->
+    <div v-bind:class="backgroundClassName">What is going on here </div>
+
+    <!-- v-on -->
     <div id="example-1">
-      <button v-on:click="increment">Add 1</button>
-      <p>The button above has been clicked {{ counter }} times.</p>
+      <button v-on:click="handleClick">Click This</button>
     </div>
+
+    <!-- v-once -->
+   <div v-once> this will only appear once: {{ message }}</div>
+   <div> this will only appear once: {{ message }}</div>
+
+   <!-- V-html -->
+   <div v-html="anchorTag"></div>
+
+   <!-- V-model -->
+   <label for="firstName">First Name</label>
+   <input type="text" name="firstName" v-model="nameInput">
+
+   <!-- computed -->
+   <div>{{ message }} => revered: {{ reversedMessage }}</div>
+
+   <!-- Watch -->
+      <input type="text" name="firstName" v-model="nameInput">
+
+
+
+
+
+
+
+
   </div>
+
+
 </template>
 
 <script src="./PlayGround.js">

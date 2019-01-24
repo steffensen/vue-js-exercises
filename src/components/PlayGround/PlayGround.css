@@ -2,10 +2,10 @@ button {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-.someDifferentName {
+.red-background {
   background-color: red;
 }
 
-.someChangedName {
-  background-color: blue;
+.green-background {
+  background-color: green;
 }
